@@ -1,10 +1,24 @@
 <App>
   <iOS.StatusBarConfig Style="Dark" ux:Name="iosStyle"/>
   <Android.StatusBarConfig Color="ThemeColor" ux:Name="androidStyle"/>
+  <JavaScript File="MainView.js" />
 
   <DockPanel>
-    <StackPanel Dock="Top" Margin="60">
+    <StackPanel Dock="Bottom" Margin="60">
       <Text TextAlignment="Center">MsgMe</Text>
+      <Button Alignment="Right" Clicked="{test}" Text="Test" />
+      <Button Alignment="Right" Clicked="{listen}" Text="Listen" />
     </StackPanel>
+    <ScrollView>
+      <StackPanel>
+        <Rectangle ux:Class="Separator" Height="1" Fill="#fff4" />
+
+        <Each Items="{messages}">
+            <Separator />
+            <TextBlock Value="{content}" />
+        </Each>
+
+      </StackPanel>
+    </ScrollView>
   </DockPanel>
 </App>
