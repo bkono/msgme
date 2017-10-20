@@ -7,3 +7,7 @@ server: protos
 
 demo: protos
 	go run ./demo/main.go
+
+android: protos
+	gomobile bind -v -target=android -o ./mobileapp/lib/mobilesdk.aar \
+		github.com/bkono/msgme/sdk

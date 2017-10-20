@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/bkono/msgme/proto/msgme"
+	"github.com/bkono/msgme/server/handler"
 	"github.com/micro/go-log"
 	"github.com/micro/go-micro"
-	"github.com/bkono/msgme/server/handler"
-	"github.com/bkono/msgme/proto/msgme"
 )
 
 func main() {

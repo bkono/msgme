@@ -1,2 +1,10 @@
 <App>
+  <iOS.StatusBarConfig Style="Dark" ux:Name="iosStyle"/>
+  <Android.StatusBarConfig Color="ThemeColor" ux:Name="androidStyle"/>
+
+  <DockPanel>
+    <StackPanel Dock="Top" Margin="60">
+      <Text TextAlignment="Center">MsgMe</Text>
+    </StackPanel>
+  </DockPanel>
 </App>
