@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+package msgme;
+
+service MsgMe {
+    rpc Send(Message) returns (SendResponse);
+    rpc Listen(ListenRequest) returns (stream Message);
+}
+
+message Message {
+    string from = 1;
+    string content = 2;
+    google.protobuf.Timestamp sent_at = 3;
+}
+
+message SendResponse {
+    int32 code = 1;
+    string description = 2;
+}
+
+// Placeholder for future filtering
+message ListenRequest {}
