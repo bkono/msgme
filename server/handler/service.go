@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/bkono/msgme/proto/msgme"
-	"github.com/go-log/log"
+	"github.com/micro/go-log"
 	"github.com/micro/protobuf/ptypes"
 	"golang.org/x/net/context"
 )
