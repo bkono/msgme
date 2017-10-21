@@ -1,0 +1,8 @@
+<Panel ux:Class="msgme.Message" Margin="10" Padding="10" FontSize="14">
+	<string ux:Property="Text" />
+	<float ux:Property="FontSize" />
+	<Rectangle Layer="Background" Color="#DBF0EA" CornerRadius="5" Alignment="Left" Width="90%">
+		<DropShadow Angle="90" Distance="1" Spread="0.2" Size=".5" Color="#00000060" />
+	</Rectangle>
+	<Text Value="{ReadProperty Text}" FontSize="{ReadProperty FontSize}" TextAlignment="Center" TextWrapping="Wrap" />
+</Panel>

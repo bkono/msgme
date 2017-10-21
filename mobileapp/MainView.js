@@ -2,7 +2,7 @@ var Observable = require("FuseJS/Observable");
 var MsgMeSDK = require("MsgMeSDK");
 
 var count = Observable(0);
-var messages = Observable([]);
+var messages = Observable();
 
 function test() {
   var result = MsgMeSDK.Test();
@@ -12,7 +12,7 @@ function test() {
 
 function send() {
   console.log("starting to send");
-  MsgMeSDK.Send("some message");
+  MsgMeSDK.Send("client side", "some message");
   console.log("sent");
 }
 
