@@ -40,7 +40,7 @@ make demo
 
 Output should be something along the lines of:
 
-![](https://www.dropbox.com/s/e9zl0p8vy5b42pf/msgme-cli-demo.gif?raw=1)
+![](https://dsh.re/b6a9f)
 
 To explore the Fuse app, you'll need a connected android device. With the server still up and running, in another terminal, build the android sdk
 

@@ -11,3 +11,6 @@ demo: protos
 android: protos
 	gomobile bind -v -target=android -o ./mobileapp/lib/mobilesdk.aar \
 		github.com/bkono/msgme/sdk
+
+ios: protos
+	gomobile bind -v -target=ios -o ./mobileapp/lib/Msgmesdk.framework github.com/bkono/msgme/sdk
